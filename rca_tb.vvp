@@ -1,0 +1,121 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001b12bb6d1e0 .scope module, "rca_tb" "rca_tb" 2 7;
+ .timescale 0 0;
+v000001b12bc19680_0 .var "A", 1 0;
+v000001b12bc75f10_0 .var "B", 1 0;
+v000001b12bc75330_0 .var "Cin", 0 0;
+v000001b12bc76410_0 .net "Cout", 0 0, L_000001b12bc77ae0;  1 drivers
+v000001b12bc758d0_0 .net "Sum", 1 0, L_000001b12bc755b0;  1 drivers
+S_000001b12bb6d370 .scope module, "rca1" "rca" 2 15, 3 14 0, S_000001b12bb6d1e0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 2 "A";
+    .port_info 1 /INPUT 2 "B";
+    .port_info 2 /INPUT 1 "Cin";
+    .port_info 3 /OUTPUT 2 "Sum";
+    .port_info 4 /OUTPUT 1 "Cout";
+v000001b12bc19400_0 .net "A", 1 0, v000001b12bc19680_0;  1 drivers
+v000001b12bc19540_0 .net "B", 1 0, v000001b12bc75f10_0;  1 drivers
+v000001b12bc19ea0_0 .net "C1", 0 0, L_000001b12bc17ed0;  1 drivers
+v000001b12bc19c20_0 .net "Cin", 0 0, v000001b12bc75330_0;  1 drivers
+v000001b12bc19040_0 .net "Cout", 0 0, L_000001b12bc77ae0;  alias, 1 drivers
+v000001b12bc195e0_0 .net "Sum", 1 0, L_000001b12bc755b0;  alias, 1 drivers
+L_000001b12bc76690 .part v000001b12bc19680_0, 0, 1;
+L_000001b12bc76730 .part v000001b12bc75f10_0, 0, 1;
+L_000001b12bc76550 .part v000001b12bc19680_0, 1, 1;
+L_000001b12bc76050 .part v000001b12bc75f10_0, 1, 1;
+L_000001b12bc755b0 .concat8 [ 1 1 0 0], L_000001b12bc18250, L_000001b12bc17ca0;
+S_000001b12bc25b30 .scope module, "fa0" "fa" 3 21, 3 3 0, S_000001b12bb6d370;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "cin";
+    .port_info 3 /OUTPUT 1 "sum";
+    .port_info 4 /OUTPUT 1 "cout";
+L_000001b12bc17f40 .functor XOR 1, L_000001b12bc76690, L_000001b12bc76730, C4<0>, C4<0>;
+L_000001b12bc18250 .functor XOR 1, L_000001b12bc17f40, v000001b12bc75330_0, C4<0>, C4<0>;
+L_000001b12bc17c30 .functor AND 1, L_000001b12bc76690, L_000001b12bc76730, C4<1>, C4<1>;
+L_000001b12bc182c0 .functor XOR 1, L_000001b12bc76690, L_000001b12bc76730, C4<0>, C4<0>;
+L_000001b12bc18100 .functor AND 1, L_000001b12bc182c0, v000001b12bc75330_0, C4<1>, C4<1>;
+L_000001b12bc17ed0 .functor OR 1, L_000001b12bc17c30, L_000001b12bc18100, C4<0>, C4<0>;
+v000001b12bc19720_0 .net *"_ivl_0", 0 0, L_000001b12bc17f40;  1 drivers
+v000001b12bc194a0_0 .net *"_ivl_4", 0 0, L_000001b12bc17c30;  1 drivers
+v000001b12bc19180_0 .net *"_ivl_6", 0 0, L_000001b12bc182c0;  1 drivers
+v000001b12bc19a40_0 .net *"_ivl_8", 0 0, L_000001b12bc18100;  1 drivers
+v000001b12bc19cc0_0 .net "a", 0 0, L_000001b12bc76690;  1 drivers
+v000001b12bc19220_0 .net "b", 0 0, L_000001b12bc76730;  1 drivers
+v000001b12bc19860_0 .net "cin", 0 0, v000001b12bc75330_0;  alias, 1 drivers
+v000001b12bc19f40_0 .net "cout", 0 0, L_000001b12bc17ed0;  alias, 1 drivers
+v000001b12bc19900_0 .net "sum", 0 0, L_000001b12bc18250;  1 drivers
+S_000001b12bc25cc0 .scope module, "fa1" "fa" 3 22, 3 3 0, S_000001b12bb6d370;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "cin";
+    .port_info 3 /OUTPUT 1 "sum";
+    .port_info 4 /OUTPUT 1 "cout";
+L_000001b12bc17bc0 .functor XOR 1, L_000001b12bc76550, L_000001b12bc76050, C4<0>, C4<0>;
+L_000001b12bc17ca0 .functor XOR 1, L_000001b12bc17bc0, L_000001b12bc17ed0, C4<0>, C4<0>;
+L_000001b12bc17fb0 .functor AND 1, L_000001b12bc76550, L_000001b12bc76050, C4<1>, C4<1>;
+L_000001b12bc18020 .functor XOR 1, L_000001b12bc76550, L_000001b12bc76050, C4<0>, C4<0>;
+L_000001b12bc77df0 .functor AND 1, L_000001b12bc18020, L_000001b12bc17ed0, C4<1>, C4<1>;
+L_000001b12bc77ae0 .functor OR 1, L_000001b12bc17fb0, L_000001b12bc77df0, C4<0>, C4<0>;
+v000001b12bc19d60_0 .net *"_ivl_0", 0 0, L_000001b12bc17bc0;  1 drivers
+v000001b12bc199a0_0 .net *"_ivl_4", 0 0, L_000001b12bc17fb0;  1 drivers
+v000001b12bc19ae0_0 .net *"_ivl_6", 0 0, L_000001b12bc18020;  1 drivers
+v000001b12bc197c0_0 .net *"_ivl_8", 0 0, L_000001b12bc77df0;  1 drivers
+v000001b12bc192c0_0 .net "a", 0 0, L_000001b12bc76550;  1 drivers
+v000001b12bc19e00_0 .net "b", 0 0, L_000001b12bc76050;  1 drivers
+v000001b12bc19b80_0 .net "cin", 0 0, L_000001b12bc17ed0;  alias, 1 drivers
+v000001b12bc190e0_0 .net "cout", 0 0, L_000001b12bc77ae0;  alias, 1 drivers
+v000001b12bc19360_0 .net "sum", 0 0, L_000001b12bc17ca0;  1 drivers
+    .scope S_000001b12bb6d1e0;
+T_0 ;
+    %vpi_call 2 19 "$dumpfile", "rca.vcd" {0 0 0};
+    %vpi_call 2 20 "$dumpvars", 32'sb00000000000000000000000000000000, S_000001b12bb6d1e0 {0 0 0};
+    %vpi_call 2 24 "$display", "A B Cin | Sum Cout" {0 0 0};
+    %vpi_call 2 25 "$monitor", "%b %b %b | %b %b", v000001b12bc19680_0, v000001b12bc75f10_0, v000001b12bc75330_0, v000001b12bc758d0_0, v000001b12bc76410_0 {0 0 0};
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v000001b12bc19680_0, 0, 2;
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v000001b12bc75f10_0, 0, 2;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001b12bc75330_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 2;
+    %store/vec4 v000001b12bc19680_0, 0, 2;
+    %pushi/vec4 1, 0, 2;
+    %store/vec4 v000001b12bc75f10_0, 0, 2;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001b12bc75330_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 2, 0, 2;
+    %store/vec4 v000001b12bc19680_0, 0, 2;
+    %pushi/vec4 3, 0, 2;
+    %store/vec4 v000001b12bc75f10_0, 0, 2;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001b12bc75330_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 3, 0, 2;
+    %store/vec4 v000001b12bc19680_0, 0, 2;
+    %pushi/vec4 3, 0, 2;
+    %store/vec4 v000001b12bc75f10_0, 0, 2;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001b12bc75330_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 33 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "rca_tb.v";
+    "./rca.v";
