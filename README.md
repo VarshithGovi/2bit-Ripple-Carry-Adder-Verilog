@@ -28,17 +28,6 @@ The **`rca.v`** module implements a 2-bit Ripple Carry Adder that adds two 2-bit
 The adder consists of two **Full Adder** stages connected in sequence, where the carry-out from one stage becomes the carry-in of the next.
 
 ### Truth Table:
-#### For a Single Full Adder (basic building block):
-| A | B | Cin | Sum | Cout |
-|:-:|:-:|:---:|:---:|:----:|
-| 0 | 0 |  0  |  0  |   0  |
-| 0 | 0 |  1  |  1  |   0  |
-| 0 | 1 |  0  |  1  |   0  |
-| 0 | 1 |  1  |  0  |   1  |
-| 1 | 0 |  0  |  1  |   0  |
-| 1 | 0 |  1  |  0  |   1  |
-| 1 | 1 |  0  |  0  |   1  |
-| 1 | 1 |  1  |  1  |   1  |
 
 ### Truth Table for 2-Bit Ripple Carry Adder:
 
