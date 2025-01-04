@@ -6,10 +6,10 @@ Welcome to the **2-Bit Ripple Carry Adder** project! 🎉 This repository provid
 
 | File Name                | Description                                                                 |
 |--------------------------|-----------------------------------------------------------------------------|
-| **`ripple_carry_adder.v`** | Verilog module implementing the 2-bit Ripple Carry Adder.                  |
-| **`tb_ripple_carry_adder.v`** | Testbench to validate the functionality of the Ripple Carry Adder.       |
-| **`ripple_carry_adder.vcd`** | Value Change Dump file generated after simulation for waveform analysis. |
-| **`ripple_carry_adder.vvp`** | Compiled simulation file created by Icarus Verilog.                      |
+| **`rca.v`** | Verilog module implementing the 2-bit Ripple Carry Adder.                  |
+| **`rca_tb.v`** | Testbench to validate the functionality of the Ripple Carry Adder.       |
+| **`rca.vcd`** | Value Change Dump file generated after simulation for waveform analysis. |
+| **`rca_tb.vvp`** | Compiled simulation file created by Icarus Verilog.                      |
 | **`LICENSE`**            | MIT License details.                                                       |
 
 ## 📋 Ripple Carry Adder Implementation
