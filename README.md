@@ -14,7 +14,7 @@ Welcome to the **2-Bit Ripple Carry Adder** project! 🎉 This repository provid
 
 ## 📋 Ripple Carry Adder Implementation
 
-The **`ripple_carry_adder.v`** module implements a 2-bit Ripple Carry Adder that adds two 2-bit binary numbers with a carry-in and produces a 2-bit sum along with a carry-out.
+The **`rca.v`** module implements a 2-bit Ripple Carry Adder that adds two 2-bit binary numbers with a carry-in and produces a 2-bit sum along with a carry-out.
 
 ### Module Details:
 - **Inputs:**
@@ -63,7 +63,7 @@ The adder consists of two **Full Adder** stages connected in sequence, where the
 
 ## 📜 Testbench Overview
 
-The **`tb_ripple_carry_adder.v`** file thoroughly verifies the functionality of the Ripple Carry Adder module by applying various test cases. The results are logged in the terminal and exported to a **`.vcd`** file for waveform visualization.
+The **`rca_tb.v`** file thoroughly verifies the functionality of the Ripple Carry Adder module by applying various test cases. The results are logged in the terminal and exported to a **`.vcd`** file for waveform visualization.
 
 ## 📸 Screenshots
 
