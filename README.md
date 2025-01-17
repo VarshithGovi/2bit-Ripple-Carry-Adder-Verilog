@@ -1,15 +1,15 @@
 # 2-Bit Ripple Carry Adder Using Verilog 🚀
 
-Welcome to the **2-Bit Ripple Carry Adder** project! 🎉 This repository provides a clean and modular implementation of a **2-bit Ripple Carry Adder** using **Verilog**, along with a detailed testbench for functional verification. Ideal for beginners diving into digital design concepts! 💻✨
+Welcome to the **2-bit Ripple Carry Adder** project! 🎉 This repository provides a clean and modular implementation of a **2-bit Ripple Carry Adder** using **Verilog**, along with a detailed testbench for functional verification. Ideal for beginners diving into digital design concepts! 💻✨
 
 ## 🗂 File Overview
 
 | File Name                | Description                                                                 |
 |--------------------------|-----------------------------------------------------------------------------|
-| **`rca.v`** | Verilog module implementing the 2-bit Ripple Carry Adder.                  |
-| **`rca_tb.v`** | Testbench to validate the functionality of the Ripple Carry Adder.       |
-| **`rca.vcd`** | Value Change Dump file generated after simulation for waveform analysis. |
-| **`rca_tb.vvp`** | Compiled simulation file created by Icarus Verilog.                      |
+| **[rca.v](https://github.com/VarshithGovi/2bit-Ripple-Carry-Adder-Verilog/blob/main/rca.v)`** | Verilog module implementing the 2-bit Ripple Carry Adder.                  |
+| **[rca_tb.v](https://github.com/VarshithGovi/2bit-Ripple-Carry-Adder-Verilog/blob/main/rca_tb.v)** | Testbench to validate the functionality of the Ripple Carry Adder.       |
+| **[rca.vcd](https://github.com/VarshithGovi/2bit-Ripple-Carry-Adder-Verilog/blob/main/rca.vcd)** | Value Change Dump file generated after simulation for waveform analysis. |
+| **[rca_tb.vvp](https://github.com/VarshithGovi/2bit-Ripple-Carry-Adder-Verilog/blob/main/rca_tb.vvp)** | Compiled simulation file created by Icarus Verilog.                      |
 | **`LICENSE`**            | MIT License details.                                                       |
 
 ## 📋 Ripple Carry Adder Implementation
@@ -66,7 +66,7 @@ The **`rca_tb.v`** file thoroughly verifies the functionality of the Ripple Carr
 
 ## 📚 Simulation Setup Reference
 
-For a detailed guide on setting up simulations using **Icarus Verilog** and **GTKWave**, check out my [Logic Gates Simulation Repository](https://github.com/VarshithGovi/Logic_gates). It provides step-by-step instructions to compile, simulate, and visualize Verilog designs.
+For a detailed guide on setting up simulations using **Icarus Verilog** and **GTKWave**, check out my [Logic Gates Simulation Repository](https://github.com/VarshithGovi/Logic_gates). It provides step-by-step instructions on compiling, simulating, and visualizing Verilog designs.
 
 ## 🤝 Contributions
 
